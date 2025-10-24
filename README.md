@@ -4,9 +4,9 @@
 
 ## Grob-Planung
 
-1. Für welche API möchten Sie ein eigenes *front end* erstellen?
-2. Welche groben Funktionalitäten soll Ihr *front end* zur Verfügung stellen?
-3. Was möchten Sie insbesondere dabei lernen oder üben?
+1. Für welche API möchten Sie ein eigenes *front end* erstellen? Cat Facts: https://alexwohlbruck.github.io/cat-facts/
+2. Welche groben Funktionalitäten soll Ihr *front end* zur Verfügung stellen? Alle Funktionalitäten die auf der API Seite angezeigt wird
+3. Was möchten Sie insbesondere dabei lernen oder üben? Das Thema genau verstehen.
 
 ## 24.10.
 
@@ -28,3 +28,4 @@
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
