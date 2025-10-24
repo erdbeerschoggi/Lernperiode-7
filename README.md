@@ -21,14 +21,15 @@ Heute habe ich eine Skizze von meinem Frontend der Webseite erstellt. In dieser 
 
 ## 31.10.
 
-- [ ] Mich mit JavaScript ein wenig beschäftigen, sodass ich das besser verstehe
-- [ ] Die ersten paar zeilen von Javascript schreiben
+- [ ] Mich mit JavaScript ein wenig beschäftigen, sodass ich das besser verstehe.
+- [ ] Die ersten paar Zeilen von Javascript schreiben.
 - [ ] Mich über den API informieren: https://alexwohlbruck.github.io/cat-facts/
-- [ ] Den API mit dem Code verbinden
+- [ ] Den API mit dem Code verbinden.
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
 
 
