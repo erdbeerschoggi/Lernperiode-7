@@ -14,7 +14,7 @@
 - [ ] Arbeitspaket 2: Setzen Sie in HTML und CSS Ihren Entwurf auf rudimentäre Weise um.
 - [ ] Arbeitspaket 3: Schreiben Sie ersten JS-Code als *proof of concept* (bspw. Meldung bei Klick auf Knopf-Element)
 
-![OfflineArbeitspaket-Lernperiode7](https://github.com/user-attachments/assets/93dd0bdc-467f-4bc5-b967-56b233b0eedf)
+![OfflineArbeitspaket-Lernperiode7](https://github.com/user-attachments/assets/7a783ec7-4ed1-495f-b9bc-40cfd9d5b21a)
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
@@ -30,5 +30,6 @@
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
 
