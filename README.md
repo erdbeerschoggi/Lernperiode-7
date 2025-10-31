@@ -21,14 +21,21 @@ Heute habe ich eine Skizze von meinem Frontend der Webseite erstellt. In dieser 
 
 ## 31.10.
 
-- [ ] Das design meiner webseite auf einen ok stand bringen.
-- [ ] Mich mit JavaScript ein wenig beschäftigen, sodass ich das besser verstehe.
+- [x] Das design meiner webseite auf einen ok stand bringen.
+- [x] Mich mit JavaScript ein wenig beschäftigen, sodass ich das besser verstehe.
 - [ ] Mich über den API informieren: https://alexwohlbruck.github.io/cat-facts/
 - [ ] Den API mit dem Code verbinden.
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich das Design meiner Webseite auspoliert. Jedoch funktionieren 2 Funktionen der Website noch nicht allzu gut, aber das ist momentan nicht so wichtig. Danach habe ich mich ein wenig mit JavaScript beschäftigt und habe mich ein wenig über meine API informiert, aber noch nicht genug, denn ich bin mir immer noch unsicher, ob sie beim Verbinden funktionieren wird.
 
-☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+## 7.10
+
+- [ ] Noch einwenig mich mit Js beschäftigen.
+- [ ] Mich über die API mehr informieren und auch sichergehen das die verbindung klappen wird. ( https://alexwohlbruck.github.io/cat-facts/ )
+- [ ] Den API mit dem Code verbinden.
+- [ ] Wenn die Webseite mit der API verbunden ist, die funktionen der Webseite dann ausbauen.
+
+
 
 
 
