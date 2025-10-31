@@ -6,12 +6,22 @@ body {
   color: #333;
 }
 
-#SendingCatFacts {
-  background-color: #725e54;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-family: cursive;
+}
+
+#RecievedCatFacts {
+  background-color:#FC8EAC;
 }
 
 #TrendingCatFacts {
-  background-color: #a7b0ca;
+  background-color: #FC8EAC;
 }
 
 h1 {
@@ -41,7 +51,7 @@ section {
 }
 
 aside {
-  background-color: #8edce6;
+  background-color: #FC8EAC;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -49,10 +59,13 @@ aside {
   height: auto;
 }
 
+#PostCatFacts {
+  background-color:#FC8EAC;
+}
 
 button {
   display: block;
-  background-color: #d5dcf9;
+  background-color: #FCD3DE;
   border: none;
   border-radius: 10px;
   color: #000;
@@ -64,7 +77,7 @@ button {
 }
 
 button:hover {
-  background-color: #a3b1f7;
+  background-color: #E75480;
   transform: scale(1.03);
 }
 
@@ -77,7 +90,7 @@ button:hover {
 
 
 footer {
-  background-color: #d5dcf9;
+  background-color: #FCD3DE;
   text-align: center;
   padding: 10px;
   font-size: 14px;

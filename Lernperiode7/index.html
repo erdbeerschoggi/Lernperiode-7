@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
+    <title>Cat Facts</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,20 +20,27 @@
             <p>Cats have five toes on their front paws, but only four toes on their back paws.</p>
         </section>
 
-        <button id="clickButton">Your Favorite Cat Facts</button>
-        <p id="message"></p>
-        <button>Would you like to post your own Cat Fact?</button>
+        <button><a href = "FavCatFacts.html">Your Favorite Cat Facts</a></button>
+        <button><a href = "RecievedCatFacts.html">Recieved Cat Facts</a></button>
         
 
-        <aside>Text Messages</aside>
-        <section id="SendingCatFacts">Send Cat Facts to your Friends</section>
-        <section>
+        <aside>
+            <h3>Text Messages</h3>
+        </aside>
+        <section id="TrendingCatFacts">
             <h3>Trending Cat Facts</h3>
             <ul>
                 <li>Cats sleep for 70% of their lives.</li>
                 <li>A group of cats is called a clowder.</li>
                 <li>Cats can make over 100 different sounds.</li>           
             </ul>
+        </section>
+        <section id="PostCatFacts">
+            <h3>Post your own Cat Fact</h3>
+            <form>
+                <textarea id="catFact" name="catFact" rows="4" cols="50" placeholder="Type your cat fact here..."></textarea><br><br>
+                <button value="Submit Cat Fact">Submit Cat Fact</button>
+            </form>
         </section>
     </main>
     <footer>
