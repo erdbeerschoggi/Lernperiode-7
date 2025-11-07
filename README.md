@@ -30,12 +30,20 @@ Heute habe ich das Design meiner Webseite auspoliert. Jedoch funktionieren 2 Fun
 
 ## 7.10
 
-- [ ] Noch einwenig mich mit Js beschäftigen.
-- [ ] Mich über die API mehr informieren und auch sichergehen das die verbindung klappen wird. ( https://alexwohlbruck.github.io/cat-facts/ )
-- [ ] Den API mit dem Code verbinden.
+- [x] Noch einwenig mich mit Js beschäftigen.
+- [x] Mich über die API mehr informieren und auch sichergehen das die verbindung klappen wird. ( https://alexwohlbruck.github.io/cat-facts/ )
+- [x] Den API mit dem Code verbinden.
 - [ ] Wenn die Webseite mit der API verbunden ist, die funktionen der Webseite dann ausbauen.
 
+Heute habe ich mich über die API informiert und geschaut, ob es klappt. Ich war mir nicht sicher, ob diese API klappen würde, aber ich habe sie trotzdem mit meinem Code verbunden. Es ergab sich jedoch, dass diese API nicht funktionierte, und ich fragte ChatGPT nach Alternativen, denn ich wollte immer noch eine Webseite über Katzenfakten erstellen. ChatGPT gab mir dann eine andere API heraus (https://catfact.ninja/fact), die nicht so viele Funktionen hatte wie die vorherige, aber sie beinhaltete die wichtigste Funktion, und zwar die, Katzenfakten herauszugeben. 
 
+
+## 14.10
+
+- [ ] Nachschauen ob die funktionen, die mit der alten API funktionierten, trotzdem implementiert werden können.
+- [ ] Den Countdown verbessern, so dass dieser wirklich 24h läuft und nicth erst anfängt wenn man die Webseite besucht.
+- [ ] Die restlichen funktionionen einbauen, falls das geht.
+- [ ] Herausfinden wie man die Katzenfakten die man bekommen hat speichern kann und falls es geht implementieren.
 
 
 
