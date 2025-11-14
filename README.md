@@ -35,7 +35,7 @@ Heute habe ich das Design meiner Webseite auspoliert. Jedoch funktionieren 2 Fun
 - [x] Den API mit dem Code verbinden.
 - [ ] Wenn die Webseite mit der API verbunden ist, die funktionen der Webseite dann ausbauen.
 
-Heute habe ich mich über die API informiert und geschaut, ob es klappt. Ich war mir nicht sicher, ob diese API klappen würde, aber ich habe sie trotzdem mit meinem Code verbunden. Es ergab sich jedoch, dass diese API nicht funktionierte, und ich fragte ChatGPT nach Alternativen, denn ich wollte immer noch eine Webseite über Katzenfakten erstellen. ChatGPT gab mir dann eine andere API heraus (https://catfact.ninja/fact), die nicht so viele Funktionen hatte wie die vorherige, aber sie beinhaltete die wichtigste Funktion, und zwar die, Katzenfakten herauszugeben. 
+Heute habe ich mich über die API informiert und geschaut, ob es klappt. Ich war mir nicht sicher, ob diese API klappen würde, aber ich habe sie trotzdem mit meinem Code verbunden. Es ergab sich jedoch, dass diese API nicht funktionierte, und ich fragte ChatGPT nach Alternativen, denn ich wollte immer noch eine Webseite über Katzenfakten erstellen. ChatGPT gab mir dann eine andere API heraus, die nicht so viele Funktionen hatte wie die vorherige, aber sie beinhaltete die wichtigste Funktion, und zwar die, Katzenfakten herauszugeben. 
 
 
 ## 14.10
@@ -52,6 +52,7 @@ Heute habe ich meinen Countdown verbessert, sodass wirklich alle 24 h ein neuer
 - [ ] Den Countdown so einstellen das er um 00.00 neustartet und nicht von wo ich ihn jetzt gestartet habe.
 - [ ] Mich entscheiden ob ich das erstellen von Cat Facts beibehalten will. -> Wenn ja, dann die funktion dafür implementieren.
 - [ ] Herausfinden wie ich Trending Cat Facts implementieren möchte.
+
 
 
 
