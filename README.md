@@ -45,6 +45,13 @@ Heute habe ich mich über die API informiert und geschaut, ob es klappt. Ich war
 - [ ] Die restlichen funktionionen einbauen, falls das geht.
 - [x] Herausfinden wie man die Katzenfakten die man bekommen hat speichern kann und falls es geht implementieren.
 
+Heute habe ich meinen Countdown verbessert, sodass wirklich alle 24 h ein neuer Katzenfakt geladen wird. Vorher habe ich es nämlich so gemacht, dass der Countdown die ganze Zeit neu startet, wenn man auf die Seite index.html geht, und ich wollte, dass jeden Tag ein neuer Katzenfakt geladen wird, was mir auch gelungen ist. Dann habe ich nachgeschaut, wie ich die Funktionen implementieren kann, und als ich wusste, dass das geht, fing ich mit der Implementierung der wichtigsten Katzenfakten an (Katzenfakten speichern und Lieblings-Katzenfakten auswählen).
+
+## 21.10
+- [ ] Die RecievedCatFacts & FavCatFacts löschen können.
+- [ ] Den Countdown so einstellen das er um 00.00 neustartet und nicht von wo ich ihn jetzt gestartet habe.
+- [ ] Mich entscheiden ob ich das erstellen von Cat Facts beibehalten will. -> Wenn ja, dann die funktion dafür implementieren.
+- [ ] Herausfinden wie ich Trending Cat Facts implementieren möchte.
 
 
 
