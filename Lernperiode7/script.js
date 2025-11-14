@@ -1,57 +1,141 @@
-// HTML-Elemente holen
-const factParagraph = document.querySelector("main section:nth-of-type(2) p");
-const countdownElement = document.querySelector("main section:nth-of-type(1) p");
+const API_URL = "";
 
-// API
-async function fetchCatFact() {
-  const urls = [
-    "https://cat-fact.herokuapp.com/facts/random", // Original API (Sehrwahrscheinlich nicht verfügbar)
-    "https://catfact.ninja/fact" // Backup API (API die von ChatGPT vorgeschlagen wurde)
-  ];
-
-  for (const url of urls) {
+// LocalStorage helpers
+function load(key, fallback) {
     try {
-      const response = await fetch(url);
-      if (!response.ok) throw new Error("API-Fehler");
-      const data = await response.json();
-
-      
-      const fact = data.text || data.fact;
-      factParagraph.textContent = fact;
-      return;
-    } catch (error) {
-      console.warn(`Fehler bei ${url}:`, error.message);
+        const val = JSON.parse(localStorage.getItem(key));
+        return val !== null && val !== undefined ? val : fallback;
+    } catch (e) {
+        return fallback;
     }
-  }
-
-  factParagraph.textContent = "Keine Cat Facts verfügbar.";
 }
 
-//24-Stunden-Countdown
-let countdown = 86400;
-
-function formatTime(seconds) {
-  const hrs = String(Math.floor(seconds / 3600)).padStart(2, "0");
-  const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
-  const secs = String(seconds % 60).padStart(2, "0");
-  return `${hrs}:${mins}:${secs}`;
+function save(key, value) {
+    localStorage.setItem(key, JSON.stringify(value));
 }
 
-function startCountdown() {
-  countdownElement.textContent = formatTime(countdown);
-  const interval = setInterval(() => {
-    countdown--;
-    countdownElement.textContent = formatTime(countdown);
+// DOM Elements
+const countdownEl = document.querySelector("#countdown");
+const factEl = document.querySelector("#todayFact");
+const favBtn = document.querySelector("#saveFavorite");
+const favContainer = document.querySelector("#favoritesList");
+const receivedContainer = document.querySelector("#receivedList");
+const trendingList = document.querySelector("#trendingList");
 
-    if (countdown <= 0) {
-      clearInterval(interval);
-      fetchCatFact();
-      countdown = 86400;
-      startCountdown();
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+let lastFactTime = load("lastFactTime", 0);
+let todayFact = load("todayFact", null);
+
+
+// Fetch Cat Fact from API
+async function fetchCatFact() {
+    try {
+        const res = await fetch(API_URL);
+        const data = await res.json();
+        return data.fact;
+    } catch (err) {
+        console.error("API error:", err);
+        return "Could not load cat fact. Please try again later.";
     }
-  }, 1000);
 }
 
-//Start
-fetchCatFact();
-startCountdown();
+
+// Generate New Fact
+async function generateNewFact() {
+    const newFact = await fetchCatFact();
+
+    todayFact = newFact;
+    factEl.textContent = newFact;
+
+    lastFactTime = Date.now();
+    save("todayFact", newFact);
+    save("lastFactTime", lastFactTime);
+
+    saveReceivedFact(newFact);
+    updateTrending(newFact);
+}
+
+
+// Countdown Logic
+async function updateCountdown() {
+    const now = Date.now();
+    const elapsed = now - lastFactTime;
+
+    // Only generate a new fact if 24h passed or no fact yet
+    if (!todayFact || elapsed >= DAY_MS || lastFactTime === 0) {
+        await generateNewFact();
+    }
+
+    const remaining = Math.max(0, DAY_MS - (Date.now() - lastFactTime));
+    const h = String(Math.floor(remaining / 3600000)).padStart(2, "0");
+    const m = String(Math.floor((remaining % 3600000) / 60000)).padStart(2, "0");
+    const s = String(Math.floor((remaining % 60000) / 1000)).padStart(2, "0");
+
+    if (countdownEl) countdownEl.textContent = `${h}:${m}:${s}`;
+    if (factEl) factEl.textContent = todayFact;
+}
+
+// Start countdown interval
+if (countdownEl && factEl) {
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+}
+
+
+// Favorite Cat Facts
+function saveFavorite(fact) {
+    let favs = load("favoriteFacts", []);
+    if (!favs.includes(fact)) {
+        favs.push(fact);
+        save("favoriteFacts", favs);
+        renderFavorites();
+    }
+}
+
+function renderFavorites() {
+    if (!favContainer) return;
+    favContainer.innerHTML = "";
+    let favs = load("favoriteFacts", []);
+    favs.forEach(f => {
+        const btn = document.createElement("button");
+        btn.textContent = f;
+        favContainer.appendChild(btn);
+    });
+}
+
+if (favBtn) {
+    favBtn.addEventListener("click", () => {
+        if (todayFact) {
+            saveFavorite(todayFact);
+            alert("Saved to favorites!");
+        }
+    });
+}
+
+renderFavorites();
+
+
+// Received Cat Facts
+function saveReceivedFact(fact) {
+    let received = load("receivedFacts", []);
+    if (received[received.length - 1] !== fact) {
+        received.push(fact);
+        save("receivedFacts", received);
+        renderReceived();
+    }
+}
+
+function renderReceived() {
+    if (!receivedContainer) return;
+    receivedContainer.innerHTML = "";
+    const received = load("receivedFacts", []);
+    received.forEach(fact => {
+        const btn = document.createElement("button");
+        btn.textContent = fact;
+        receivedContainer.appendChild(btn);
+    });
+}
+
+renderReceived();
+
