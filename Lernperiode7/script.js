@@ -1,4 +1,4 @@
-const API_URL = "";
+const API_URL = "https://catfact.ninja/fact";
 
 // LocalStorage helpers
 function load(key, fallback) {
@@ -139,3 +139,22 @@ function renderReceived() {
 
 renderReceived();
 
+
+//Delete Buttons
+const deleteBtn = document.querySelector("#delete_btn");
+if (deleteBtn) {
+    deleteBtn.addEventListener("click", () => {
+        localStorage.removeItem("receivedFacts");
+        renderReceived();
+    }); 
+}
+const deleteBtn2 = document.querySelector("#delete_btn2");
+if (deleteBtn2) {
+    deleteBtn2.addEventListener("click", () => {
+        localStorage.removeItem("favoriteFacts");
+        renderFavorites();
+    }); 
+}   
+
+// Restore Deleted Data
+const restoreDeletedDataBtn = document.querySelector("#RestoreDeletedData");    
