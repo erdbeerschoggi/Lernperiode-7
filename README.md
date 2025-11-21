@@ -48,12 +48,18 @@ Heute habe ich mich über die API informiert und geschaut, ob es klappt. Ich war
 Heute habe ich meinen Countdown verbessert, sodass wirklich alle 24 h ein neuer Katzenfakt geladen wird. Vorher habe ich es nämlich so gemacht, dass der Countdown die ganze Zeit neu startet, wenn man auf die Seite index.html geht, und ich wollte, dass jeden Tag ein neuer Katzenfakt geladen wird, was mir auch gelungen ist. Dann habe ich nachgeschaut, wie ich die Funktionen implementieren kann, und als ich wusste, dass das geht, fing ich mit der Implementierung der wichtigsten Katzenfakten an (Katzenfakten speichern und Lieblings-Katzenfakten auswählen).
 
 ## 21.10
-- [ ] Die RecievedCatFacts & FavCatFacts löschen können.
+- [x] Die RecievedCatFacts & FavCatFacts löschen können.
 - [ ] Den Countdown so einstellen das er um 00.00 neustartet und nicht von wo ich ihn jetzt gestartet habe.
-- [ ] Mich entscheiden ob ich das erstellen von Cat Facts beibehalten will. -> Wenn ja, dann die funktion dafür implementieren.
+- [x] Mich entscheiden ob ich das erstellen von Cat Facts beibehalten will. -> Wenn ja, dann die funktion dafür implementieren.
 - [ ] Herausfinden wie ich Trending Cat Facts implementieren möchte.
 
+Heute habe ich die Löschfunktion hinzugefügt. Ich möchte jedoch diese noch ausbauen, weil die Löschfunktion, die ich erstellt habe, ausgebaut werden kann, indem man auch die gelöschten CatFacts wiederherstellen kann, und wenn man CatFacts löschen möchte, dass man genau auswählen kann, welche man gelöscht haben will, weil man jetzt alles auf einmal … Dann habe ich mir überlegt, ob ich die Erstellung von CatFacts beibehalten will, und ich habe mich entschieden, dies nicht zu machen. Vielleicht werde ich es später implementieren, deswegen lasse ich diesen Abschnitt auf meiner Website.
 
+## 28.10
+- [ ] Den Countdown so einstellen das er um 00.00 neustartet und nicht von wo ich ihn jetzt gestartet habe.
+- [ ] Löschfunktion ausbauen - Auswählen was man genau löschen möchte
+- [ ] Löschfunktion ausbauen - Das Gelöschte wiederherstellen können
+- [ ] Herausfinden wie ich Trending Cat Facts implementieren möchte.
 
 
 
