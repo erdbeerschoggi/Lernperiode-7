@@ -56,10 +56,18 @@ Heute habe ich meinen Countdown verbessert, sodass wirklich alle 24 h ein neuer
 Heute habe ich die Löschfunktion hinzugefügt. Ich möchte jedoch diese noch ausbauen, weil die Löschfunktion, die ich erstellt habe, ausgebaut werden kann, indem man auch die gelöschten CatFacts wiederherstellen kann, und wenn man CatFacts löschen möchte, dass man genau auswählen kann, welche man gelöscht haben will, weil man jetzt alles auf einmal … Dann habe ich mir überlegt, ob ich die Erstellung von CatFacts beibehalten will, und ich habe mich entschieden, dies nicht zu machen. Vielleicht werde ich es später implementieren, deswegen lasse ich diesen Abschnitt auf meiner Website.
 
 ## 28.10
-- [ ] Den Countdown so einstellen das er um 00.00 neustartet und nicht von wo ich ihn jetzt gestartet habe.
+- [x] Den Countdown so einstellen das er um 00.00 neustartet und nicht von wo ich ihn jetzt gestartet habe.
 - [ ] Löschfunktion ausbauen - Auswählen was man genau löschen möchte
 - [ ] Löschfunktion ausbauen - Das Gelöschte wiederherstellen können
-- [ ] Herausfinden wie ich Trending Cat Facts implementieren möchte.
+- [x] Herausfinden wie ich Trending Cat Facts implementieren möchte.
+
+Heute habe ich meinen Countdown ausgebaut. Es dauerte ein wenig, bis ich herausgefunden hatte, wie genau ich das machen wollte, und am Anfang dauerte es ein wenig, bis ich wusste, wie ich diese Funktion hinzuzufügen hatte. Dann hatte ich noch ein wenig Zeit übrig und ich dachte mir, ich fange nicht mit der Löschfunktion an, sondern ich überlege mir, wie ich die Trending Cat Facts implementieren möchte. Meine Idee dazu wäre: Je mehr Leute die Cat Facts zu ihren Favoriten hinzufügen, desto bekannter (trending) ist dieser Cat Fact. Ich weiss nicht genau, ob das gehen würde und ob das überhaupt etwas bringt, wenn nur ich diese App bis jetzt benutze, aber ich dachte, es wäre eine gute Idee.
+
+## 05.12 
+- [ ]  Löschfunktion ausbauen - Auswählen was man genau löschen möchte
+- [ ]  Löschfunktion ausbauen - Das Gelöschte wiederherstellen können
+- [ ]  Trending Cat Facts funktion implementieren
+- [ ]  Code organisieren, übersichtlicher gestallten
 
 
 
