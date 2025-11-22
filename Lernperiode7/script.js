@@ -1,4 +1,4 @@
-const API_URL = "https://catfact.ninja/fact";
+const API_URL = "";
 
 // LocalStorage helpers
 function load(key, fallback) {
@@ -167,3 +167,4 @@ if (deleteBtn2) {
 
 // Restore Deleted Data
 const restoreDeletedDataBtn = document.querySelector("#RestoreDeletedData");    
+
