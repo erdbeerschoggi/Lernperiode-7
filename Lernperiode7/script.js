@@ -1,4 +1,4 @@
-const API_URL = "";
+const API_URL = "https://catfact.ninja/fact";
 
 // LocalStorage helpers
 function load(key, fallback) {
@@ -58,26 +58,34 @@ async function generateNewFact() {
 
 
 // Countdown Logic
+function getNextMidnight() {
+    const now = new Date();
+    const tomorrow = new Date();
+    tomorrow.setHours(24, 0, 0, 0);
+    return tomorrow.getTime();
+}
+
+let nextMidnight = load("nextMidnight", getNextMidnight());
+
 async function updateCountdown() {
     const now = Date.now();
-    const elapsed = now - lastFactTime;
 
-    // Only generate a new fact if 24h passed or no fact yet
-    if (!todayFact || elapsed >= DAY_MS || lastFactTime === 0) {
+    if (now >= nextMidnight) {
         await generateNewFact();
+        nextMidnight = getNextMidnight();
+        save("nextMidnight", nextMidnight);
     }
 
-    const remaining = Math.max(0, DAY_MS - (Date.now() - lastFactTime));
+    const remaining = nextMidnight - now;
+
     const h = String(Math.floor(remaining / 3600000)).padStart(2, "0");
     const m = String(Math.floor((remaining % 3600000) / 60000)).padStart(2, "0");
     const s = String(Math.floor((remaining % 60000) / 1000)).padStart(2, "0");
 
-    if (countdownEl) countdownEl.textContent = `${h}:${m}:${s}`;
-    if (factEl) factEl.textContent = todayFact;
+    countdownEl.textContent = `${h}:${m}:${s}`;
 }
 
-// Start countdown interval
-if (countdownEl && factEl) {
+if (countdownEl) {
     updateCountdown();
     setInterval(updateCountdown, 1000);
 }
@@ -156,6 +164,6 @@ if (deleteBtn2) {
     }); 
 }   
 
+
 // Restore Deleted Data
 const restoreDeletedDataBtn = document.querySelector("#RestoreDeletedData");    
-
