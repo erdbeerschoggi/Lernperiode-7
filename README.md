@@ -66,8 +66,9 @@ Heute habe ich meinen Countdown ausgebaut. Es dauerte ein wenig, bis ich herausg
 ## 05.12 
 - [ ]  Löschfunktion ausbauen - Auswählen was man genau löschen möchte
 - [ ]  Löschfunktion ausbauen - Das Gelöschte wiederherstellen können
-- [ ]  Trending Cat Facts funktion implementieren
+- [ ]  Die API ruft nicht mehr die CAT FACTS auf -> diese funktion wiederherstellen.
 - [ ]  Code organisieren, übersichtlicher gestallten
+
 
 
 
