@@ -63,13 +63,18 @@ Heute habe ich die Löschfunktion hinzugefügt. Ich möchte jedoch diese noch au
 
 Heute habe ich meinen Countdown ausgebaut. Es dauerte ein wenig, bis ich herausgefunden hatte, wie genau ich das machen wollte, und am Anfang dauerte es ein wenig, bis ich wusste, wie ich diese Funktion hinzuzufügen hatte. Dann hatte ich noch ein wenig Zeit übrig und ich dachte mir, ich fange nicht mit der Löschfunktion an, sondern ich überlege mir, wie ich die Trending Cat Facts implementieren möchte. Meine Idee dazu wäre: Je mehr Leute die Cat Facts zu ihren Favoriten hinzufügen, desto bekannter (trending) ist dieser Cat Fact. Ich weiss nicht genau, ob das gehen würde und ob das überhaupt etwas bringt, wenn nur ich diese App bis jetzt benutze, aber ich dachte, es wäre eine gute Idee.
 
-## 05.12 
-- [ ]  Löschfunktion ausbauen - Auswählen was man genau löschen möchte
+## 12.12 
+- [x]  Löschfunktion ausbauen - Auswählen was man genau löschen möchte
 - [ ]  Löschfunktion ausbauen - Das Gelöschte wiederherstellen können
-- [ ]  Die API ruft nicht mehr die CAT FACTS auf -> diese funktion wiederherstellen.
+- [x]  Die API ruft nicht mehr die CAT FACTS auf -> diese funktion wiederherstellen.
 - [ ]  Code organisieren, übersichtlicher gestallten
 
+Heute habe ich meine Löschfunktion und die «Save to Favorites»-Funktion ausgebaut. Zudem habe ich mich dazu entschieden, das Wiederherstellen der gelöschten Cat-Facts wegzulassen, denn ich habe bei den received Cat-Facts (den, die man bekommt) den Delete-Button weggenommen und einen D-Button hinzugefügt. D. h., man kann die erhaltenen Katzenfakten nur noch zu den Favoriten hinzufügen und man darf sie nicht löschen. Dann habe ich die Löschfunktion verbessert, indem man einzelne Katzenfakten aus den Favoriten löschen kann. So können keine Katzenfakten verloren gehen. Dazu habe ich das Design bei den Lieblings-Katzenfakten und bei den erhaltenen Katzenfakten verbessert, sodass es übersichtlicher ist und nicht nach zu viel aussieht. Dann dachte ich mir, ein Return-Button, sodass man zur Homepage zurückgehen kann, wäre schon recht nützlich, und habe diesen noch schnell hinzugefügt.
 
+## 19.12
+- [ ] Die Trending Cat Facts funktion erstellen.
+- [ ] Code organisieren, übersichtlicher gestallten.
+- [ ] Reflexion schreiben und Projekt abschliessen.
 
 
 
