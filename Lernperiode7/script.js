@@ -1,4 +1,4 @@
-const API_URL = "";
+const API_URL = "https://catfact.ninja/fact";
 
 // LocalStorage helpers
 function load(key, fallback) {
@@ -27,6 +27,14 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 let lastFactTime = load("lastFactTime", 0);
 let todayFact = load("todayFact", null);
 
+if (todayFact) {
+    saveReceivedFact(todayFact);
+} 
+
+if (todayFact && factEl) {
+    factEl.textContent = todayFact;
+} 
+
 
 // Fetch Cat Fact from API
 async function fetchCatFact() {
@@ -46,14 +54,13 @@ async function generateNewFact() {
     const newFact = await fetchCatFact();
 
     todayFact = newFact;
-    factEl.textContent = newFact;
+    if (factEl) factEl.textContent = newFact;
 
     lastFactTime = Date.now();
     save("todayFact", newFact);
     save("lastFactTime", lastFactTime);
 
     saveReceivedFact(newFact);
-    updateTrending(newFact);
 }
 
 
@@ -104,11 +111,29 @@ function saveFavorite(fact) {
 function renderFavorites() {
     if (!favContainer) return;
     favContainer.innerHTML = "";
+
     let favs = load("favoriteFacts", []);
-    favs.forEach(f => {
-        const btn = document.createElement("button");
-        btn.textContent = f;
-        favContainer.appendChild(btn);
+
+    favs.forEach((fact, index) => {
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("factItem");
+
+        const text = document.createElement("p");
+        text.textContent = fact;
+
+        const delBtn = document.createElement("button");
+        delBtn.textContent = "Delete";
+        delBtn.classList.add("deleteOne");
+
+        delBtn.addEventListener("click", () => {
+            favs.splice(index, 1);
+            save("favoriteFacts", favs);
+            renderFavorites();
+        });
+
+        wrapper.appendChild(text);
+        wrapper.appendChild(delBtn);
+        favContainer.appendChild(wrapper);
     });
 }
 
@@ -120,7 +145,6 @@ if (favBtn) {
         }
     });
 }
-
 renderFavorites();
 
 
@@ -137,11 +161,28 @@ function saveReceivedFact(fact) {
 function renderReceived() {
     if (!receivedContainer) return;
     receivedContainer.innerHTML = "";
-    const received = load("receivedFacts", []);
-    received.forEach(fact => {
-        const btn = document.createElement("button");
-        btn.textContent = fact;
-        receivedContainer.appendChild(btn);
+
+    let received = load("receivedFacts", []);
+
+    received.forEach((fact, index) => {
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("factItem");
+
+        const text = document.createElement("p");
+        text.textContent = fact;
+
+        const saveBtn = document.createElement("button");
+        saveBtn.textContent = "save";
+        saveBtn.classList.add("saveOne");
+
+        saveBtn.addEventListener("click", () => {
+            saveFavorite(fact); 
+            alert("Saved to favorites!");
+        });
+
+        wrapper.appendChild(text);
+        wrapper.appendChild(saveBtn);
+        receivedContainer.appendChild(wrapper);
     });
 }
 
@@ -165,6 +206,4 @@ if (deleteBtn2) {
 }   
 
 
-// Restore Deleted Data
-const restoreDeletedDataBtn = document.querySelector("#RestoreDeletedData");    
 

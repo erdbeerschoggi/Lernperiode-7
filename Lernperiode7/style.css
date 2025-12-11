@@ -74,27 +74,36 @@ button:hover, a:hover {
   transform: scale(1.03);
 }
 
-#delete_btn, #delete_btn2 {
-  background-color: #FF6B6B;
-  color: white;
-  width: 90px;
-  margin-bottom: 15px;  
-}
-
-#RestoreDeletedData {
+.backbtn {
   background-color: #FCD3DE;
   color: rgb(0, 0, 0);
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  line-height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  width: 70px;
+  margin: 10px;
 }
+
+.factItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.deleteOne , .saveOne {
+    background-color: #d7b2b2;
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 70px;
+    margin: 10px;
+}
+
+.deleteOne:hover {
+    background-color: #ff0000;
+}
+
+.saveOne:hover {
+    background-color: #E75480;
+}
+
 footer {
   background-color: #FCD3DE;
   text-align: center;
@@ -119,5 +128,7 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+
 
 
