@@ -82,10 +82,11 @@ Heute habe ich mein Projekt abgeschlossen. Ich dachte, ich wäre schon letztes M
 In dieser Lernperiode habe ich eine Campact-Webseite erstellt. Die Webseite hat einen Countdown von 24h und um Mitternacht (00.00.00) lädt immer ein neuer Katzenfakt auf der Webseite. Dieser Katzenfakt wird auf der Webseite bei den «received CatFacts» gespeichert, sodass man immer Zugriff auf alle Katzenfakten hat, die man jemals bekommen hat. Natürlich habe ich auch eine Save-CatFacts-Funktion, die Lieblings-Katzen-Fakten des Users speichert. Unten an der Webseite habe ich noch 3 Placeholders für 3 andere Funktionen, die in meinem Plan waren. Ich hatte jedoch keine Zeit, um diese richtig zu implementieren. Ich habe diese jedoch auf der Webseite behalten, falls ich mal Lust bekomme, an diesen Funktionen weiterzuarbeiten.
 
 
-![Lernperiode7GIF](https://github.com/user-attachments/assets/873bee2d-aaf3-4e47-9a41-1a8290d1f9b2)
+![Lernperiode7Recording (1)](https://github.com/user-attachments/assets/69f972d2-6727-4d38-a312-fd94d099c5ff)
 
 
 # Reflexion
 Ich fand diese Lernperiode gut. Ich hatte Spass daran, an meinem Projekt zu arbeiten, da ich unbedingt das Endprodukt von dieser Katzen-Fakten-Webseite sehen wollte. Was mich immer gefreut hat, war, wenn ich die Webseite öffnete und bevor ich anfing zu arbeiten, bekam ich noch einen interessanten Katzenfakt. Am Anfang des Projekts fand ich es schwierig, daran zu arbeiten, da ich mich am Anfang im Modul 294 noch nicht so viel mit dem Thema befasst hatte, aber als ich genug wusste, ging es mir viel, viel leichter. 
+
 
 
