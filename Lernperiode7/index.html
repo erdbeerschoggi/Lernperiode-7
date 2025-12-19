@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Facts</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Cat Facts</h1>
-    </header> 
+      <h1>Cat Facts</h1>
+    </header>
     <main>
-        <section>
-            <h3>Countdown until the next Cat Fact:</h3>
-            <h1 id="countdown"><b>00:00:00</b></h1>
-        </section>
-        <section>
-            <h3>Todays Cat Fact is:</h3>
-            <p id="todayFact"></p>
-            <button id="saveFavorite">Save to Favorites</button>
-        </section>
+      <section>
+        <h3>Countdown until the next Cat Fact:</h3>
+        <h1 id="countdown"><b>00:00:00</b></h1>
+      </section>
+      <section>
+        <h3>Todays Cat Fact is:</h3>
+        <p id="todayFact"></p>
+        <button id="saveFavorite">Save to Favorites</button>
+      </section>
 
-        <a href="FavCatFacts.html">Your Favorite Cat Facts</a>
-        <a href="RecievedCatFacts.html">Recieved Cat Facts</a>
-        
+      <a href="FavCatFacts.html">Your Favorite Cat Facts</a>
+      <a href="RecievedCatFacts.html">Recieved Cat Facts</a>
 
-        <aside>
-            <h3>Text Messages</h3>
-        </aside>
-        <section id="TrendingCatFacts">
-            <h3>Trending Cat Facts</h3>
-            <ul id="trendingList">
-                <li>Cats sleep for 70% of their lives.</li>
-                <li>A group of cats is called a clowder.</li>
-                <li>Cats can make over 100 different sounds.</li>           
-            </ul>
-        </section>
-        <section id="PostCatFacts">
-            <h3>Post your own Cat Fact</h3>
-            <form>
-                <textarea id="catFact" name="catFact" rows="4" cols="50" placeholder="Type your cat fact here..."></textarea><br><br>
-                <button type="submit" value="Submit Cat Fact">Submit Cat Fact</button>
-            </form>
-        </section>
+      <aside>
+        <h3>Text Messages</h3>
+      </aside>
+      <section id="TrendingCatFacts">
+        <h3>Trending Cat Facts</h3>
+        <ul id="trendingList">
+          <li>Cats sleep for 70% of their lives.</li>
+          <li>A group of cats is called a clowder.</li>
+          <li>Cats can make over 100 different sounds.</li>
+        </ul>
+      </section>
+      <section id="PostCatFacts">
+        <h3>Post your own Cat Fact</h3>
+        <form>
+          <textarea
+            id="catFact"
+            name="catFact"
+            rows="4"
+            cols="50"
+            placeholder="Type your cat fact here..."
+          ></textarea
+          ><br /><br />
+          <button type="submit" value="Submit Cat Fact">Submit Cat Fact</button>
+        </form>
+      </section>
     </main>
     <footer>
-        <p>&copy; CAT FACTS</p>
-    </footer>  
+      <p>&copy; CAT FACTS</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
