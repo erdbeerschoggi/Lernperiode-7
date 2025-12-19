@@ -72,13 +72,20 @@ Heute habe ich meinen Countdown ausgebaut. Es dauerte ein wenig, bis ich herausg
 Heute habe ich meine Löschfunktion und die «Save to Favorites»-Funktion ausgebaut. Zudem habe ich mich dazu entschieden, das Wiederherstellen der gelöschten Cat-Facts wegzulassen, denn ich habe bei den received Cat-Facts (den, die man bekommt) den Delete-Button weggenommen und einen D-Button hinzugefügt. D. h., man kann die erhaltenen Katzenfakten nur noch zu den Favoriten hinzufügen und man darf sie nicht löschen. Dann habe ich die Löschfunktion verbessert, indem man einzelne Katzenfakten aus den Favoriten löschen kann. So können keine Katzenfakten verloren gehen. Dazu habe ich das Design bei den Lieblings-Katzenfakten und bei den erhaltenen Katzenfakten verbessert, sodass es übersichtlicher ist und nicht nach zu viel aussieht. Dann dachte ich mir, ein Return-Button, sodass man zur Homepage zurückgehen kann, wäre schon recht nützlich, und habe diesen noch schnell hinzugefügt.
 
 ## 19.12
-- [ ] Die Funktion der erhaltenen Katzenfakten reparieren, da es die Katzenfakten nicht speichert.
-- [ ] Code organisieren, übersichtlicher gestallten.
+- [X] Die Funktion der erhaltenen Katzenfakten reparieren, da es die Katzenfakten nicht mehr speichert. 
+- [x] Code organisieren, übersichtlicher gestallten.
 - [ ] Reflexion schreiben und Projekt abschliessen.
 
+Heute habe ich mein Projekt abgeschlossen. Ich dachte, ich wäre schon letztes Mal sehr weit gekommen und hätte Zeit, um weitere Funktionen in meinem Code auszubauen, aber als ich die Webseite im Live-Server öffnete, funktionierte nichts mehr. Das verwirrte mich, denn beim letzten Mal funktionierte es und mein Code sah auch für mich richtig aus. Deswegen probierte ich, das Problem zu beheben. Ich kam jedoch nicht weit, denn alles, was ich probierte, funktionierte nicht. Dann erinnerte ich mich, dass ich die Webseite auch auf VS Code aufmachen kann. Als ich es in VS Code öffnete, funktionierte alles wie letzte Woche. Da ich das Problem nicht fand, dachte ich, es wäre okay, wenn es auf VS Code funktioniert, und liess es dabei, da ich meine Zusammenfassung vom Projekt anfangen schreiben musste.
+
+# Fertiges Projekt
+In dieser Lernperiode habe ich eine Campact-Webseite erstellt. Die Webseite hat einen Countdown von 24h und um Mitternacht (00.00.00) lädt immer ein neuer Katzenfakt auf der Webseite. Dieser Katzenfakt wird auf der Webseite bei den «received CatFacts» gespeichert, sodass man immer Zugriff auf alle Katzenfakten hat, die man jemals bekommen hat. Natürlich habe ich auch eine Save-CatFacts-Funktion, die Lieblings-Katzen-Fakten des Users speichert. Unten an der Webseite habe ich noch 3 Placeholders für 3 andere Funktionen, die in meinem Plan waren. Ich hatte jedoch keine Zeit, um diese richtig zu implementieren. Ich habe diese jedoch auf der Webseite behalten, falls ich mal Lust bekomme, an diesen Funktionen weiterzuarbeiten.
 
 
+![Lernperiode7GIF](https://github.com/user-attachments/assets/873bee2d-aaf3-4e47-9a41-1a8290d1f9b2)
 
 
+# Reflexion
+Ich fand diese Lernperiode gut. Ich hatte Spass daran, an meinem Projekt zu arbeiten, da ich unbedingt das Endprodukt von dieser Katzen-Fakten-Webseite sehen wollte. Was mich immer gefreut hat, war, wenn ich die Webseite öffnete und bevor ich anfing zu arbeiten, bekam ich noch einen interessanten Katzenfakt. Am Anfang des Projekts fand ich es schwierig, daran zu arbeiten, da ich mich am Anfang im Modul 294 noch nicht so viel mit dem Thema befasst hatte, aber als ich genug wusste, ging es mir viel, viel leichter. 
 
 
