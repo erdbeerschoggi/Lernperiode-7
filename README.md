@@ -72,9 +72,10 @@ Heute habe ich meinen Countdown ausgebaut. Es dauerte ein wenig, bis ich herausg
 Heute habe ich meine Löschfunktion und die «Save to Favorites»-Funktion ausgebaut. Zudem habe ich mich dazu entschieden, das Wiederherstellen der gelöschten Cat-Facts wegzulassen, denn ich habe bei den received Cat-Facts (den, die man bekommt) den Delete-Button weggenommen und einen D-Button hinzugefügt. D. h., man kann die erhaltenen Katzenfakten nur noch zu den Favoriten hinzufügen und man darf sie nicht löschen. Dann habe ich die Löschfunktion verbessert, indem man einzelne Katzenfakten aus den Favoriten löschen kann. So können keine Katzenfakten verloren gehen. Dazu habe ich das Design bei den Lieblings-Katzenfakten und bei den erhaltenen Katzenfakten verbessert, sodass es übersichtlicher ist und nicht nach zu viel aussieht. Dann dachte ich mir, ein Return-Button, sodass man zur Homepage zurückgehen kann, wäre schon recht nützlich, und habe diesen noch schnell hinzugefügt.
 
 ## 19.12
-- [ ] Die Trending Cat Facts funktion erstellen.
+- [ ] Die Funktion der erhaltenen Katzenfakten reparieren, da es die Katzenfakten nicht speichert.
 - [ ] Code organisieren, übersichtlicher gestallten.
 - [ ] Reflexion schreiben und Projekt abschliessen.
+
 
 
 
